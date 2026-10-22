@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>J.J. Roberts United Methodist School | Sinkor, Monrovia</title>
-  <meta name="description" content="Christian values, academic excellence and the Jaguar's Jungle spirit since 1967. Admissions open at JJRUMS, Monrovia, Liberia.">
+  <link rel="icon" href="assets/Logo.jpeg" type="image/jpeg">  <meta name="description" content="Christian values, academic excellence and the Jaguar's Jungle spirit since 1967. Admissions open at JJRUMS, Monrovia, Liberia.">
   <meta property="og:title" content="J.J. Roberts United Methodist School (JJRUMS)">
   <meta property="og:description" content="Shaping future leaders of Liberia since 1967. Explore admissions and schedule a campus tour.">
   <meta property="og:type" content="website">
@@ -16,44 +16,57 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#home" class="brand"><span class="logo">J</span><span>JJRUMS</span></a>
+      <a href="#home" class="brand" aria-label="J.J. Roberts United Methodist School home"><img src="assets/Logo.jpeg" alt="J.J. Roberts United Methodist School logo" class="brand-logo"></a>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about-us">About Us</a></li>
         <li><a href="#academics">Academics</a></li>
-        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="apply.html">Admissions</a></li>
         <li><a href="#student-life">Student Life</a></li>
         <li><a href="#alumni">Alumni</a></li>
         <li><a href="#contact-us">Contact Us</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="#portal" class="btn btn-outline">Portal / Login</a>
-        <a href="#admissions" class="btn btn-gold">Apply Now</a>
+        <a href="portal.html" class="btn btn-outline">Portal / Login</a>
+        <a href="apply.html" class="btn btn-gold">Apply Now</a>
       </div>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
     </div>
     <div class="mobile-menu" hidden>
       <a href="#home">Home</a><a href="#about-us">About Us</a><a href="#academics">Academics</a>
-      <a href="#admissions">Admissions</a><a href="#student-life">Student Life</a><a href="#alumni">Alumni</a>
+      <a href="apply.html">Admissions</a><a href="#student-life">Student Life</a><a href="#alumni">Alumni</a>
       <a href="#contact-us">Contact Us</a>
       <div class="mobile-cta">
-        <a href="#portal" class="btn btn-outline">Portal / Login</a>
-        <a href="#admissions" class="btn btn-gold">Apply Now</a>
+        <a href="portal.html" class="btn btn-outline">Portal / Login</a>
+        <a href="apply.html" class="btn btn-gold">Apply Now</a>
       </div>
     </div>
   </header>
 
   <section id="home" class="hero">
-    <img src="assets/hero.jpg" alt="JJRUMS students collaborating in a sunlit classroom" class="hero-img" width="1920" height="1088">
+    <div class="hero-slides" aria-label="School highlights">
+      <img src="assets/graduates2.jpg" alt="JJRUMS graduates celebrating" class="hero-img hero-slide is-active" width="960" height="640">
+      <img src="assets/graduates.jpg" alt="JJRUMS graduates together" class="hero-img hero-slide" width="960" height="640">
+      <img src="assets/hero.jpg" alt="JJRUMS students collaborating in a sunlit classroom" class="hero-img hero-slide" width="1920" height="1088">
+    </div>
     <div class="hero-overlay"></div>
     <div class="container hero-content">
       <p class="pill reveal">Welcome to the Jaguar's Jungle</p>
-      <h1 class="reveal">Shaping Future Leaders of Liberia at J.J. Roberts United Methodist School.</h1>
+      <h1 class="hero-title">Shaping Future Leaders of Liberia at J.J. Roberts United Methodist School.</h1>
       <p class="lead reveal">Christian values, academic excellence and a vibrant community where every student is known, challenged and loved.</p>
       <div class="hero-buttons reveal">
         <a href="#admissions" class="btn btn-gold btn-lg">Explore Admissions</a>
         <a href="#contact-us" class="btn btn-ghost btn-lg">Schedule a Campus Tour</a>
       </div>
+    </div>
+    <div class="hero-slider-controls" aria-label="Hero image controls">
+      <button class="slider-arrow" type="button" data-slide-step="-1" aria-label="Previous image">‹</button>
+      <div class="slider-dots" role="group" aria-label="Choose hero image">
+        <button class="slider-dot is-active" type="button" data-slide="0" aria-label="Show image 1" aria-pressed="true"></button>
+        <button class="slider-dot" type="button" data-slide="1" aria-label="Show image 2" aria-pressed="false"></button>
+        <button class="slider-dot" type="button" data-slide="2" aria-label="Show image 3" aria-pressed="false"></button>
+      </div>
+      <button class="slider-arrow" type="button" data-slide-step="1" aria-label="Next image">›</button>
     </div>
   </section>
 
@@ -111,8 +124,8 @@
   <footer id="contact-us" class="footer">
     <div class="container footer-grid">
       <div><p class="footer-brand">JJRUMS</p><p>J.J. Roberts United Methodist School — Home of the Jaguars.</p></div>
-      <div><p class="footer-title">Visit us</p><p>12th Street, Sinkor, Monrovia, Liberia</p><p>+231 000 000 000</p></div>
-      <div><p class="footer-title">Follow</p><p class="social"><a href="https://facebook.com">Facebook</a><a href="https://x.com">X</a></p></div>
+      <div><p class="footer-title">Visit us</p><p>12th Street, Sinkor, Monrovia, Liberia, 1000</p><p>+231 77 752 7042</p></div>
+      <div><p class="footer-title">Follow</p><p class="social"><a href="https://www.facebook.com/JJRUMS/">Facebook</a><a href="https://x.com">X</a></p></div>
     </div>
     <p class="copy">© <span id="year"></span> J.J. Roberts United Methodist School. All rights reserved.</p>
   </footer>

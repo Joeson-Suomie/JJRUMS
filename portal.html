@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Portal | J.J. Roberts United Methodist School</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:'#142a5c',gold:'#f2c230',cream:'#fbf9f3'}}}}</script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="index.html" class="flex items-center gap-3"><img src="assets/Logo.jpeg" alt="J.J. Roberts United Methodist School logo" class="h-16 w-16 object-contain"><span class="hidden text-sm font-bold text-navy sm:block">J.J. Roberts United Methodist School</span></a>
+      <a href="index.html" class="rounded-full border border-navy px-5 py-2 text-sm font-semibold text-navy hover:bg-navy hover:text-white">Back to website</a>
+    </div>
+  </header>
+  <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12">
+    <section id="login-view" class="mx-auto max-w-md rounded-3xl border border-slate-200 bg-white p-7 shadow-xl shadow-slate-200/60 sm:p-10">
+      <div class="mb-7 text-center"><p class="text-sm font-bold uppercase tracking-[.18em] text-amber-600">Administrator access</p><h1 class="mt-2 text-3xl font-extrabold text-navy">Portal Login</h1><p class="mt-2 text-sm text-slate-500">Sign in to manage school records.</p></div>
+      <form id="login-form" class="space-y-5">
+        <label class="block text-sm font-semibold">Admin username<input required autocomplete="username" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 font-normal outline-none focus:border-navy focus:ring-2 focus:ring-navy/20" placeholder="Enter username"></label>
+        <label class="block text-sm font-semibold">Password<input required type="password" autocomplete="current-password" class="mt-2 w-full rounded-xl border border-slate-300 px-4 py-3 font-normal outline-none focus:border-navy focus:ring-2 focus:ring-navy/20" placeholder="Enter password"></label>
+        <button class="w-full rounded-xl bg-navy px-5 py-3 font-bold text-white hover:bg-blue-950">Login to dashboard</button>
+        <p class="text-center text-xs text-slate-500">Demo portal: enter any username and password.</p>
+      </form>
+    </section>
+
+    <section id="dashboard-view" class="hidden">
+      <div class="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end"><div><p class="text-sm font-bold uppercase tracking-[.18em] text-amber-600">School administration</p><h1 class="mt-1 text-3xl font-extrabold text-navy sm:text-4xl">Admin Dashboard</h1><p class="mt-2 text-slate-500">A snapshot of staff, students and school finances.</p></div><button id="logout" class="self-start rounded-full border border-slate-300 px-5 py-2 text-sm font-semibold hover:bg-white sm:self-auto">Log out</button></div>
+      <div class="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p class="text-sm font-semibold text-slate-500">Total staff</p><p class="mt-2 text-4xl font-extrabold text-navy">86</p><p class="mt-2 text-sm text-emerald-700">Across 8 departments</p></article>
+        <article class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200"><p class="text-sm font-semibold text-slate-500">Total students</p><p class="mt-2 text-4xl font-extrabold text-navy">1,248</p><p class="mt-2 text-sm text-slate-500">Nursery through Grade 12</p></article>
+        <article class="rounded-2xl bg-navy p-6 text-white shadow-sm sm:col-span-2 xl:col-span-1"><p class="text-sm font-semibold text-white/70">Financial overview · this term</p><div class="mt-3 flex justify-between gap-4"><div><p class="text-xs text-white/70">Collected</p><p class="text-2xl font-extrabold">$184,250</p></div><div class="text-right"><p class="text-xs text-white/70">Outstanding</p><p class="text-2xl font-extrabold text-gold">$32,800</p></div></div><div class="mt-4 h-2 rounded-full bg-white/20"><div class="h-full w-[85%] rounded-full bg-gold"></div></div></article>
+      </div>
+      <section class="mt-9 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+        <div class="border-b border-slate-100 px-5 py-5 sm:px-6"><h2 class="text-xl font-bold text-navy">Staff records</h2><p class="mt-1 text-sm text-slate-500">Current staff directory and payroll details.</p></div>
+        <div class="overflow-x-auto"><table class="min-w-[760px] w-full text-left text-sm"><thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500"><tr><th class="px-5 py-3">Name</th><th class="px-5 py-3">Age</th><th class="px-5 py-3">Gender</th><th class="px-5 py-3">Date employed</th><th class="px-5 py-3">Salary / month</th><th class="px-5 py-3">Department</th></tr></thead><tbody class="divide-y divide-slate-100"><tr><td class="px-5 py-4 font-semibold">Mary K. Johnson</td><td class="px-5 py-4">42</td><td class="px-5 py-4">Female</td><td class="px-5 py-4">2015-08-24</td><td class="px-5 py-4">$850</td><td class="px-5 py-4">Administration</td></tr><tr><td class="px-5 py-4 font-semibold">Samuel T. Moore</td><td class="px-5 py-4">36</td><td class="px-5 py-4">Male</td><td class="px-5 py-4">2018-09-03</td><td class="px-5 py-4">$620</td><td class="px-5 py-4">Science</td></tr><tr><td class="px-5 py-4 font-semibold">Grace N. Williams</td><td class="px-5 py-4">31</td><td class="px-5 py-4">Female</td><td class="px-5 py-4">2021-01-11</td><td class="px-5 py-4">$540</td><td class="px-5 py-4">Early Childhood</td></tr><tr><td class="px-5 py-4 font-semibold">Peter S. Davis</td><td class="px-5 py-4">48</td><td class="px-5 py-4">Male</td><td class="px-5 py-4">2012-08-20</td><td class="px-5 py-4">$700</td><td class="px-5 py-4">Mathematics</td></tr></tbody></table></div>
+      </section>
+      <section class="mt-9 overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200">
+        <div class="border-b border-slate-100 px-5 py-5 sm:px-6"><h2 class="text-xl font-bold text-navy">Student records</h2><p class="mt-1 text-sm text-slate-500">Browse students by academic level.</p></div>
+        <div class="flex flex-wrap gap-2 px-5 pt-5 sm:px-6" role="tablist" aria-label="Student academic level">
+          <button class="level-tab rounded-full bg-navy px-4 py-2 text-sm font-semibold text-white" data-level="early">Early Childhood</button><button class="level-tab rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600" data-level="elementary">Elementary</button><button class="level-tab rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600" data-level="junior">Junior High</button><button class="level-tab rounded-full bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-600" data-level="senior">Senior High</button>
+        </div>
+        <div class="overflow-x-auto p-5 sm:px-6"><div id="level-label" class="mb-3 text-sm font-semibold text-slate-500">Early Childhood · Nursery–K2</div><table class="min-w-[520px] w-full text-left text-sm"><thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500"><tr><th class="px-4 py-3">Name</th><th class="px-4 py-3">Age</th><th class="px-4 py-3">Gender</th><th class="px-4 py-3">Class</th></tr></thead><tbody id="student-rows" class="divide-y divide-slate-100"></tbody></table></div>
+      </section>
+      <p class="mt-6 text-center text-xs text-slate-400">Sample dashboard data for demonstration purposes.</p>
+    </section>
+  </main>
+  <script>
+    const records={early:{label:'Early Childhood · Nursery–K2',rows:[['Abigail K. Doe',4,'Female','K1'],['Daniel P. Johnson',5,'Male','K2'],['Esther M. Brown',3,'Female','Nursery']]},elementary:{label:'Elementary · Grades 1–6',rows:[['Michael T. Wilson',7,'Male','Grade 2'],['Sarah L. Davis',10,'Female','Grade 5'],['James B. Cooper',8,'Male','Grade 3']]},junior:{label:'Junior High · Grades 7–9',rows:[['Ruth K. Morris',13,'Female','Grade 8'],['Isaac D. Cole',14,'Male','Grade 9'],['Hannah P. Gray',12,'Female','Grade 7']]},senior:{label:'Senior High · Grades 10–12',rows:[['Emmanuel S. King',16,'Male','Grade 11'],['Patricia M. Bell',17,'Female','Grade 12'],['David A. Scott',15,'Male','Grade 10']]}};
+    function showLevel(key){document.getElementById('level-label').textContent=records[key].label;document.getElementById('student-rows').innerHTML=records[key].rows.map(row=>`<tr>${row.map((cell,i)=>`<td class="px-4 py-3 ${i===0?'font-semibold':''}">${cell}</td>`).join('')}</tr>`).join('');document.querySelectorAll('.level-tab').forEach(tab=>{const active=tab.dataset.level===key;tab.className=`level-tab rounded-full px-4 py-2 text-sm font-semibold ${active?'bg-navy text-white':'bg-slate-100 text-slate-600 hover:bg-slate-200'}`})}
+    const loginForm=document.getElementById('login-form');
+    function openDashboard(){document.getElementById('login-view').classList.add('hidden');document.getElementById('dashboard-view').classList.remove('hidden');showLevel('early');window.scrollTo({top:0,behavior:'smooth'})}
+    loginForm.addEventListener('submit',event=>{event.preventDefault();openDashboard()});
+    document.getElementById('logout').addEventListener('click',()=>{document.getElementById('dashboard-view').classList.add('hidden');document.getElementById('login-view').classList.remove('hidden')});document.querySelectorAll('.level-tab').forEach(tab=>tab.addEventListener('click',()=>showLevel(tab.dataset.level)));
+  </script>
+</body></html>
